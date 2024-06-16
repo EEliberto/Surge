@@ -76,17 +76,17 @@
 
 ^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-img.gif"
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 # 小米有品
 ^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
