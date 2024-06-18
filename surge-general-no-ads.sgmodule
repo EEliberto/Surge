@@ -2,56 +2,9 @@
 #!desc = 通用 App 去广告
 #!system = ios
 
-[URL Rewrite]
-# 驾考宝典
-^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
-# 今日头条
-^https:\/\/p\d.pstatp.com\/origin - reject
-^https:\/\/pb\d.pstatp.com\/origin - reject
-# QQ 钱包
-^https?:\/\/m\.qianbao\.qq\.com\/pages\/walletHome\?invisible - reject
-# 瑞幸咖啡
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
-^https:\/\/(ec|c)api\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList - reject
-# 少数派
-https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
-# 威锋
-^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) - reject
-^https?:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json - reject
-# 小米运动
-^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad - reject
-# 中国电信
-^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
-^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
-^https:\/\/www\.zhihu\.com\/appview\/v2\/zhmore - reject
-# 腾讯手机管家
-^https:\/\/ios\.rqd\.qq\.com\/analytics\/rqdsync\?aid=.* - reject
-
 [Rule]
-# 哔咔漫画
-DOMAIN, ad-channel.diwodiwo.xyz, REJECT
-DOMAIN, ad-channel.wikawika.xyz, REJECT
-DOMAIN, ad-display.diwodiwo.xyz, REJECT
-# iQIYI
-DOMAIN,ad.doubleclick.net,REJECT
-# 京东
-DOMAIN,dns.jd.com,REJECT
-IP-CIDR,101.124.19.122/32,REJECT,no-resolve
-IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
-# Blued
-DOMAIN-SUFFIX,img2.360buyimg.com,REJECT
-DOMAIN-SUFFIX,mores.toponad.com,REJECT
-DOMAIN-SUFFIX,p1-lm.adukwai.com,REJECT
 # 山姆
 URL-REGEX,^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get),REJECT
-# Keep
-URL-REGEX,^https?:\/\/api\.gotokeep\.com\/(kprime\/v\d\/popups\/primeGuide|cauchy\/growth\/init|search\/v\d\/(default\/keyword\/list|hotword\/list|hotCourse\/list)|op-engine-webapp\/v\d\/ad|ads\/v\d\/ads\/preload|training\/box\/config|anno\/v\d\/upgrade\/check)$,REJECT
-URL-REGEX,^https?:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad,REJECT
-# 云闪付
-URL-REGEX,^https?:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1,REJECT
-# 饿了么
-URL-REGEX,^https?:\/\/elemecdn.com\/.+\/sitemap,REJECT
-URL-REGEX,^https?:\/\/www1.elecfans.com\/www\/delivery,REJECT
 # 大麦
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome,REJECT
 # 航旅纵横
@@ -77,11 +30,6 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 # 小佩宠物
 ^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/api\.petkit\.cn\/6\/post\/getSplash data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# Blued
-^https:\/\/voice\.blued\.cn\/users\/chatroom\/nearby\/ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/social\.blued\.cn\/users\/100449310\/more\/ios\?v=2 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/argo\.blued\.cn\/blued\/launch\/adms data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/live\.blued\.cn\/live\/cates-v2\/0\?page=1 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 和风天气
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 米家
@@ -124,4 +72,4 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https:\/\/stormsend\.dji\.com\/api\/components\/launch_ad\.json data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 [MITM]
-hostname = %APPEND% stormsend.dji.com, api.zhihuifangdong.net, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,wallet.95516.com,*.elemecdn.com,www1.elecfans.com,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,dns.jd.com,api.m.jd.com,m.jd.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com,voice.blued.cn,live.blued.cn,argo.blued.cn,social.blued.cn
+hostname = %APPEND% stormsend.dji.com, api.zhihuifangdong.net, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com
