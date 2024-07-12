@@ -14,7 +14,7 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 # QQ
 ^https:\/\/static-res\.qq\.com\/static-res\/qq-qun-web\/banner\.png data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 曜影医疗
-^https:\/\/userpms-api\.suh\.cn\/apt\/api\/bannar\/PageList\?sysSearchKey=sysPat&showSearchKey=advertising&pageIndex=1&pagesize=100&lanSearchValue=1&locationSearchKey=&status=1&appname=pmsys&channel=6&device=ios&language=1&source=2&version=6\.61 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/userpms-api\.suh\.cn\/apt\/api\/bannar\/PageList\?sysSearchKey=sysPat&showSearchKey=advertising&pageIndex=1&pagesize=100&lanSearchValue=1&locationSearchKey=&status=1& data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 ^https:\/\/patient-api\.suh\.cn\/apt\/api\/userinfo\/GetNotice\?appname=pmsys&channel=6&device=ios&language=1&source=2&version=6\.61 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 # 麦当劳
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash\?height=932&width=430 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
