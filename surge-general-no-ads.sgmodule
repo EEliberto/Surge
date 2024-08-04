@@ -2,73 +2,75 @@
 #!desc = 通用 App 去广告
 
 [Rule]
-# 山姆
+// 山姆
 URL-REGEX,^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get),REJECT
-# 大麦
+// 大麦
 URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome,REJECT
-# 航旅纵横
+// 航旅纵横
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
 
 [Map Local]
-# QQ
-^https:\/\/static-res\.qq\.com\/static-res\/qq-qun-web\/banner\.png data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 曜影医疗
-^https:\/\/userpms-api\.suh\.cn\/apt\/api\/bannar\/PageList\?sysSearchKey=sysPat&showSearchKey=advertising&pageIndex=1&pagesize=100&lanSearchValue=1&locationSearchKey=&status=1& data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/patient-api\.suh\.cn\/apt\/api\/userinfo\/GetNotice\?appname=pmsys&channel=6&device=ios&language=1&source=2&version=6\.61 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 麦当劳
-^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash\?height=932&width=430 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 建行生活
-^https:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A009 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 正气助手
-^https:\/\/apio\.zhengqi100\.com\/forum\/thread\/listsHome data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 吉祥航空
-^https:\/\/m\.juneyaoair\.com\/server\/data\/index\/getPictureList data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getRecommendProduct data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getPictureList data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 小佩宠物
-^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/api\.petkit\.cn\/6\/post\/getSplash data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 和风天气
-^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 米家
-^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab|openingBanner) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 招商银行
-^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
-^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.mbase\.redpoint\.api\.redPointService\/getRedPointDataSec data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/az\dmbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/infoflow\/v1\/module\/home-life data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 有道云笔记
-^https:\/\/dictvip-business\.youdao\.com\/home\/ad data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/dict\.youdao\.com\/homepage\/tile data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/dict\.youdao\.com\/commonsearch data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/dict\.youdao\.com\/dictusertask\/system data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 叮咚买菜
-^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getAdvertTagInfo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/maicai\.api\.ddxq\.mobi\/vip\/getVipAd data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getPreloadAd\?ad_id data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/startUpScreen data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 顺丰速运
-^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# DJI Store
-^https:\/\/stormsend\.dji\.com\/api\/components\/launch_ad\.json data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-# 智慧房东
-^https:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/bannerPic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/appOpenAds data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+// QQ
+^https:\/\/static-res\.qq\.com\/static-res\/qq-qun-web\/banner\.png data="{}" status-code=200
+// 曜影医疗
+^https:\/\/userpms-api\.suh\.cn\/apt\/api\/bannar\/PageList\?sysSearchKey=sysPat&showSearchKey=advertising&pageIndex=1&pagesize=100&lanSearchValue=1&locationSearchKey=&status=1& data="{}" status-code=200
+^https:\/\/patient-api\.suh\.cn\/apt\/api\/userinfo\/GetNotice\?appname=pmsys&channel=6&device=ios&language=1&source=2&version=6\.61 data="{}" status-code=200
+// 麦当劳
+^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash\?height=932&width=430 data="{}" status-code=200
+// 建行生活
+^https:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A009 data="{}" status-code=200
+// 正气助手
+^https:\/\/apio\.zhengqi100\.com\/forum\/thread\/listsHome data="{}" status-code=200
+// 吉祥航空
+^https:\/\/m\.juneyaoair\.com\/server\/data\/index\/getPictureList data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getRecommendProduct data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getPictureList data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic data="{}" status-code=200
+// 小佩宠物
+^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo data="{}" status-code=200
+^https:\/\/api\.petkit\.cn\/6\/post\/getSplash data="{}" status-code=200
+// 和风天气
+^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? data="{}" status-code=200
+// 米家
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab|openingBanner) data="{}" status-code=200
+// 招商银行
+^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig data-type=text data=" " status-code=200
+^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data="{}" status-code=200
+^https:\/\/mbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="{}" status-code=200
+^https:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="{}" status-code=200
+^https:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.mbase\.redpoint\.api\.redPointService\/getRedPointDataSec data="{}" status-code=200
+^https:\/\/az\dmbasecc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec data="{}" status-code=200
+^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/infoflow\/v1\/module\/home-life data="{}" status-code=200
+// 有道云笔记
+^https:\/\/dictvip-business\.youdao\.com\/home\/ad data="{}" status-code=200
+^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab data="{}" status-code=200
+^https:\/\/dict\.youdao\.com\/homepage\/tile data="{}" status-code=200
+^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig data="{}" status-code=200
+^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup data="{}" status-code=200
+^https:\/\/dict\.youdao\.com\/commonsearch data="{}" status-code=200
+^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo data="{}" status-code=200
+^https:\/\/dict\.youdao\.com\/dictusertask\/system data="{}" status-code=200
+// 叮咚买菜
+^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id data="{}" status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop data="{}" status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop data="{}" status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id data="{}" status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getAdvertTagInfo data="{}" status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/vip\/getVipAd data="{}" status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getPreloadAd\?ad_id data="{}" status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/startUpScreen data="{}" status-code=200
+// 顺丰速运
+^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/integralPlanet\/getCxAdvertiseList data="{}" status-code=200
+^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo data="{}" status-code=200
+^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query data-type=text data="{}" status-code=200
+^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) data-type=text data="{}" status-code=200
+// DJI Store
+^https:\/\/stormsend\.dji\.com\/api\/components\/launch_ad\.json data-type=text data="{}" status-code=200
+// 智慧房东
+^https:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/bannerPic data-type=text data="{}" status-code=200
+^https:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/appOpenAds data-type=text data="{}" status-code=200
+// 天翼云盘
+https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners data-type=text data=" " status-code=200
 
 [MITM]
 hostname = %APPEND% api.zhihuifangdong.net, stormsend.dji.com, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com
