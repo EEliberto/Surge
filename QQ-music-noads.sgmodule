@@ -1,7 +1,7 @@
 #!name=QQ 音乐去广告 (Mac专用)
 #!desc=过滤 QQ 音乐广告
 #!tag=去广告
-#!system=Mac
+#!system=mac
 #!date=2024-07-07 15:31:22
 
 [Rule]
