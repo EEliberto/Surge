@@ -26,7 +26,7 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 // 吉祥航空
 ^https:\/\/m\.juneyaoair\.com\/server\/data\/index\/getPictureList data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getRecommendProduct data-type=text data="{}" status-code=200
-^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getPictureList data-type=text data="{}" status-code=200
+#^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getPictureList data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getVersion data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/version\/appVer data-type=text data="{}" status-code=200
