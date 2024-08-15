@@ -10,6 +10,8 @@ URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welc
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
 
 [Map Local]
+// 山姆屏蔽更新
+^https:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/configuration\/portal\/beUpdate data-type=text data="{}" status-code=200
 // QQ
 ^https:\/\/static-res\.qq\.com\/static-res\/qq-qun-web\/banner\.png data-type=text data="{}" status-code=200
 // 曜影医疗
@@ -26,6 +28,9 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getRecommendProduct data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getPictureList data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic data-type=text data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getVersion data-type=text data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/version\/appVer data-type=text data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/version\/compareVer data-type=text data="{}" status-code=200
 // 小佩宠物
 ^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo data-type=text data="{}" status-code=200
 ^https:\/\/api\.petkit\.cn\/6\/post\/getSplash data-type=text data="{}" status-code=200
@@ -75,4 +80,4 @@ https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners data-type=text data="
 ^https:\/\/se-api\.djiits\.com\/api\/components\/launch_ad\.json\?abbrv_url=1&country=cn&language=zh-CN data-type=text data=" " status-code=200
 
 [MITM]
-hostname = %APPEND% se-api.djiits.com, api.zhihuifangdong.net, stormsend.dji.com, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com
+hostname = %APPEND% api-sams.walmartmobile.cn, se-api.djiits.com, api.zhihuifangdong.net, stormsend.dji.com, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com
