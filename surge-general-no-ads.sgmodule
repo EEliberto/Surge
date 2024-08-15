@@ -31,6 +31,9 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getVersion data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/version\/appVer data-type=text data="{}" status-code=200
 ^https:\/\/hoapp\.juneyaoair\.com\/version\/compareVer data-type=text data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/specialOfferSection data-type=text data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/taolxService\/getSpecialGoods data-type=text data="{}" status-code=200
+^https:\/\/hoapp\.juneyaoair\.com\/theme\/themeSwitch data-type=text data="{}" status-code=200
 // 小佩宠物
 ^https:\/\/api\.petkit\.cn\/6\/\/device\/relatedProductsInfo data-type=text data="{}" status-code=200
 ^https:\/\/api\.petkit\.cn\/6\/post\/getSplash data-type=text data="{}" status-code=200
