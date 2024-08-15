@@ -72,15 +72,19 @@ URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/
 ^https:\/\/ucmp-static\.sf-express\.com\/proxy\/wxbase\/wxTicket\/wxLiveStreamInfo\?pageNo data-type=text data="{}" status-code=200
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query data-type=text data="{}" status-code=200
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/member(Goods\/pointMallService\/goodsList|Manage\/memberEquity\/queryRecommendEquity|ActLengthy\/fullGiveActivityService\/fullGiveInfo) data-type=text data="{}" status-code=200
-// DJI Store
-^https:\/\/stormsend\.dji\.com\/api\/components\/launch_ad\.json data-type=text data="{}" status-code=200
 // 智慧房东
 ^https:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/bannerPic data-type=text data="{}" status-code=200
 ^https:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/appOpenAds data-type=text data="{}" status-code=200
 // 天翼云盘
 https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners data-type=text data=" " status-code=200
 // DJI Store
+^https:\/\/stormsend\.dji\.com\/api\/components\/launch_ad\.json data-type=text data="{}" status-code=200
 ^https:\/\/se-api\.djiits\.com\/api\/components\/launch_ad\.json\?abbrv_url=1&country=cn&language=zh-CN data-type=text data=" " status-code=200
+// 小蚕霸王餐
+^https:\/\/gw\.xiaocantech\.com\/rpc  GetBannerList url-and-header data-type=text data="{}" status-code=200
+^https:\/\/web2\.realtech-inc\.com\/oss\/xc-app-assets\/configs\/common\/theme\.json data-type=text data="{}" status-code=200
+^https:\/\/sdk\.1rtb\.net\/sdk\/req_ad\? data-type=text data="{}" status-code=200
+^https:\/\/gw\.xiaocantech\.com\/g\/pa data-type=text data="{}" status-code=200
 
 [MITM]
-hostname = %APPEND% api-sams.walmartmobile.cn, se-api.djiits.com, api.zhihuifangdong.net, stormsend.dji.com, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com
+hostname = %APPEND% gw.xiaocantech.com, web2.realtech-inc.com, api-sams.walmartmobile.cn, se-api.djiits.com, api.zhihuifangdong.net, stormsend.dji.com, mbasecc.bcs.cmbchina.com, intellicc.bcs.cmbchina.com, static-res.qq.com, userpms-api.suh.cn, patient-api.suh.cn, api.mcd.cn, ios.rqd.qq.com, mbasecc.bas.cmbchina.com, yunbusiness.ccb.com, m.juneyaoair.com, apio.zhengqi100.com, hoapp.juneyaoair.com, az*mbasecc.bas.cmbchina.com, api.petkit.cn, hfapp-service.qweather.net, api-sams.walmartmobile.cn,home.mi.com,api.coolapk.com,home.umetrip.com,startup.umetrip.com,discardrp.umetrip.com,beacon.qq.com,4gimg.map.qq.com,*.kakamobi.cn,p*.pstatp.com,m.qianbao.qq.com,ecapi.lkcoffee.com,capi.lkcoffee.com,m.lkcoffee.com,ios.sspai.com,api.wfdata.club,dsa-mfp.fengshows.cn,*-release.wuta-cam.com,api-mifit.huami.com，com,api.cloud.189.cn,mbmodule-openapi.paas.cmbchina.com,az1mbasecc.bas.cmbchina.com,intellicc.bas.cmbchina.com,maicai.api.ddxq.mobi,webappcfg.paas.cmbchina.com,mcs-mimp-web.sf-express.com,ucmp-static.sf-express.com,ucmp.sf-express.com
