@@ -82,7 +82,7 @@ https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners data-type=text data="
 ^https:\/\/se-api\.djiits\.com\/api\/components\/launch_ad\.json\?abbrv_url=1&country=cn&language=zh-CN data-type=text data=" " status-code=200
 // 小蚕霸王餐
 ^https:\/\/gw\.xiaocantech\.com\/rpc  GetBannerList url-and-header data-type=text data="{}" status-code=200
-^https:\/\/web2\.realtech-inc\.com\/oss\/xc-app-assets\/configs\/common\/theme\.json data-type=text data="{}" status-code=200
+#^https:\/\/web2\.realtech-inc\.com\/oss\/xc-app-assets\/configs\/common\/theme\.json data-type=text data="{}" status-code=200
 ^https:\/\/sdk\.1rtb\.net\/sdk\/req_ad\? data-type=text data="{}" status-code=200
 ^https:\/\/gw\.xiaocantech\.com\/g\/pa data-type=text data="{}" status-code=200
 
