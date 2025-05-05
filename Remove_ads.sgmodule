@@ -2,6 +2,8 @@
 #!desc = 由 EEliberto 制作 (含整理)，去除许多 App 开屏广告和广告组件，包含许多冷门自用 App，以及更新弹窗屏蔽等，欢迎探索。
 
 [Rule]
+// 京东规则补充
+DOMAIN,api.m.jd.com,DIRECT
 // 山姆
 URL-REGEX,^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get),REJECT
 // 大麦
