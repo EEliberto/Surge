@@ -10,16 +10,19 @@ URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welc
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
 
 [Map Local]
-//山姆
+// 山姆
 ^https:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/channel\/portal\/AdgroupData\/queryAdgroup data-type=text data="{}" status-code=200
-//Workday 屏蔽更新
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/personCenterEntrance\/query data-type=text data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/trade\/order\/getOftenBuyGoods data-type=text data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/goods-portal\/spu\/searchRecommendPool data-type=text data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/appVersionUpdate\/getAppVersionUpdateInfo data-type=text data="{}" status-code=200
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/portal\/beUpdate data-type=text data="{}" status-code=200
+// Workday 屏蔽更新
 ^https:\/\/www\.myworkday\.com\/app-upgrade-version\.xml data-type=text data="{"upgrade":"NONE"}" status-code=200
-//百度搜索净化
+// 百度搜索净化
 ^https?:\/\/(?:www|m)\.baidu\.com(?:\/|\/\?(tn=&)?from=\w+)?$ data-type=file data="https://raw.githubusercontent.com/Keywos/rule/master/script/baidu_index/html/index.html" header="Content-Type: text/html; charset=utf-8"
-//京东
+// 京东
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs data-type=text data="{}" status-code=200
-// 山姆屏蔽更新
-^https:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/configuration\/portal\/beUpdate data-type=text data="{}" status-code=200
 // QQ
 ^https:\/\/static-res\.qq\.com\/static-res\/qq-qun-web\/banner\.png data-type=text data="{}" status-code=200
 // 曜影医疗
