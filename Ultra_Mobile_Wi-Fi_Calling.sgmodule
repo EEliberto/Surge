@@ -2,21 +2,21 @@
 #!desc=Ultra Mobile Paygo Wi-Fi Calling 配置模块
 
 [Rule]
-DOMAIN-SUFFIX,crl.t-mobile.com,Final Proxy
-DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org,Final Proxy
-DOMAIN-SUFFIX,eas3.msg.t-mobile.com,Final Proxy
-DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org,Final Proxy
-DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,Final Proxy
-DOMAIN-SUFFIX,mascns.t-mobile.com,Final Proxy
-DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com,Final Proxy
-DOMAIN-SUFFIX,optimizely.com,Final Proxy
-DOMAIN-SUFFIX,redirect.ultra.me,Final Proxy
-DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org,Final Proxy
-DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,Final Proxy
-DOMAIN-SUFFIX,ultramobile.com,Final Proxy
-IP-CIDR,206.29.177.36/32,Final Proxy,no-resolve
-IP-CIDR,208.54.0.0/16,Final Proxy,no-resolve
-IP-CIDR,66.94.0.0/19,Final Proxy,no-resolve
+DOMAIN-SUFFIX,crl.t-mobile.com,最终策略
+DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org,最终策略
+DOMAIN-SUFFIX,eas3.msg.t-mobile.com,最终策略
+DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org,最终策略
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,最终策略
+DOMAIN-SUFFIX,mascns.t-mobile.com,最终策略
+DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com,最终策略
+DOMAIN-SUFFIX,optimizely.com,最终策略
+DOMAIN-SUFFIX,redirect.ultra.me,最终策略
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org,最终策略
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,最终策略
+DOMAIN-SUFFIX,ultramobile.com,最终策略
+IP-CIDR,206.29.177.36/32,最终策略,no-resolve
+IP-CIDR,208.54.0.0/16,最终策略,no-resolve
+IP-CIDR,66.94.0.0/19,最终策略,no-resolve
 
 [Host]
 *.ultra.me = server:199.85.126.10
