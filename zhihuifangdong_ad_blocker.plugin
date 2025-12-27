@@ -1,0 +1,24 @@
+#!name=智慧房东广告屏蔽
+#!desc=屏蔽智慧房东App的开屏广告和Banner广告，支持独立开关控制
+#!author=Ethan
+#!homepage=https://shuaiyang.wang
+#!icon=https://icon.shuaiyang.wang/id1529842057
+#!date=2025-12-26
+#!system=ios
+
+[Argument]
+# 开屏广告屏蔽开关
+appOpenAdsSwitch = switch, true, tag=开屏广告屏蔽, desc=开启后将屏蔽App启动时的开屏广告
+
+# Banner广告屏蔽开关
+bannerAdsSwitch = switch, true, tag=Banner广告屏蔽, desc=开启后将屏蔽App内的Banner横幅广告
+
+[Script]
+# 开屏广告屏蔽
+http-response ^https?:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/appOpenAds script-path=https://raw.githubusercontent.com/EEliberto/Surge/refs/heads/main/zhihuifangdong_ad_script.js, requires-body=true, timeout=10, tag=开屏广告屏蔽, argument=appOpenAds, enable={appOpenAdsSwitch}
+
+# Banner广告屏蔽
+http-response ^https?:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/bannerPicMore script-path=https://raw.githubusercontent.com/EEliberto/Surge/refs/heads/main/zhihuifangdong_ad_script.js, requires-body=true, timeout=10, tag=Banner广告屏蔽, argument=bannerPicMore, enable={bannerAdsSwitch}
+
+[MITM]
+hostname = api.zhihuifangdong.net
