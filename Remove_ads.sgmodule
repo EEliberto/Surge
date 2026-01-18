@@ -9,6 +9,10 @@ URL-REGEX,^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welc
 // 航旅纵横
 URL-REGEX,^https?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native,REJECT
 
+[Body Rewrite]
+http-response-jq ^https:\/\/so\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes '.data.items |= map(select(.note?.type == "normal"))'
+http-response-jq ^https:\/\/rec\.xiaohongshu\.com\/api\/sns\/v\d+\/homefeed '.data |= map(select(.type == "normal"))'
+
 [Map Local]
 // 中国银行去广告
 ^https?://cdn1.mbs.boc.cn/ubas-mgateway-static/images/advertType/.+.jpg data-type=text data="{}" status-code=200
