@@ -21,4 +21,5 @@ http-response ^https?:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/appOpen
 http-response ^https?:\/\/api\.zhihuifangdong\.net\/core\/app\/activity\/bannerPicMore script-path=https://raw.githubusercontent.com/EEliberto/Surge/refs/heads/main/zhihuifangdong_ad_script.js, requires-body=true, timeout=10, tag=Banner广告屏蔽, argument=bannerPicMore, enable={bannerAdsSwitch}
 
 [MITM]
-hostname = api.zhihuifangdong.net
+hostname = %APPEND% api.zhihuifangdong.net, *.zhihuifangdong.net
+
