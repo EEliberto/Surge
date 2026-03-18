@@ -109,6 +109,8 @@ https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners data-type=text data="
 // 国家医保服务中心
 ^https:\/\/mfuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/base\/cms\/iep\/web\/cms\/hmpgcfg\/queryAppHmpgCfgByApp data-type=text data="{}" status-code=200
 ^https:\/\/mfuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/pss\/problem\/getActiveAdmdvsList data-type=text data="{}" status-code=200
+// 智慧房东
+^https:\/\/api\.zhihuifangdong\.net\/core\/app\/bindCard\/zdBankMigrateRenter data-type=text data="{}" status-code=200
 
 [URL Rewrite]
 ^https?:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/(ed64|74b5) - reject
