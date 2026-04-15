@@ -1,0 +1,11 @@
+[Rule]
+DOMAIN-SUFFIX,box.com
+DOMAIN-SUFFIX,box.net
+DOMAIN-SUFFIX,box.org
+DOMAIN-SUFFIX,boxcn.net
+DOMAIN-SUFFIX,boxcdn.com
+DOMAIN-SUFFIX,boxcloud.com
+DOMAIN-SUFFIX,box-cloud.com
+DOMAIN-KEYWORD,boxcdn
+DOMAIN-KEYWORD,boxcloud
+IP-ASN,18680,no-resolve
