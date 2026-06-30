@@ -1,0 +1,8 @@
+#!name=Claude Session Reset
+#!desc=Force Claude iOS app stale session to expire. Enable only once, then disable immediately.
+
+[MITM]
+hostname = %APPEND% claude.ai
+
+[Script]
+Claude Session Reset = type=http-response, pattern=^https:\/\/claude\.ai\/api\/account(?:\?.*)?$, requires-body=true, max-size=16384, timeout=5, script-path=claude-session-reset.js
