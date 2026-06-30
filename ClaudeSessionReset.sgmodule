@@ -5,4 +5,4 @@
 hostname = %APPEND% claude.ai
 
 [Script]
-Claude Session Reset = type=http-response, pattern=^https:\/\/claude\.ai\/api\/account(?:\?.*)?$, requires-body=true, max-size=16384, timeout=5, script-path=claude-session-reset.js
+Claude Session Reset = type=http-response, pattern=^https:\/\/claude\.ai\/api\/account(?:\?.*)?$, requires-body=true, max-size=16384, timeout=5, script-path=https://raw.githubusercontent.com/EEliberto/Surge/main/claude-session-reset.js
