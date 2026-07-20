@@ -6,6 +6,7 @@ DOMAIN,access.mypikpak.com,REJECT,pre-matching
 DOMAIN,access.mypikpak.net,REJECT,pre-matching
 DOMAIN,access.pikpak.me,REJECT,pre-matching
 DOMAIN,access.pikpakdrive.com,REJECT,pre-matching
+DOMAIN,user.mypikpak.com,最终策略
 
 [Map Local]
 ^https?:\/\/access\.mypikpak\.com\/access_controller data-type=text data=" " status-code=200
