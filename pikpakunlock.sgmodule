@@ -1,6 +1,12 @@
 #!name=PikPak 区域解锁
 #!desc=中国大陆专用
 
+[Rule]
+DOMAIN,access.mypikpak.com,REJECT,pre-matching
+DOMAIN,access.mypikpak.net,REJECT,pre-matching
+DOMAIN,access.pikpak.me,REJECT,pre-matching
+DOMAIN,access.pikpakdrive.com,REJECT,pre-matching
+
 [Map Local]
 ^https?:\/\/access\.mypikpak\.com\/access_controller data-type=text data=" " status-code=200
 
