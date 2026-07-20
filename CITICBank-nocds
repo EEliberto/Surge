@@ -1,0 +1,8 @@
+#!name=中信银行去开屏广告
+#!desc=需要卸载 App 重新安装
+
+[URL Rewrite]
+^https?://(autoload\.bank\.ecitic\.com/imcslego|imcs\.citicbank\.com)/cloud/\w+\.(png|jpe?g)\?width=\d+&height=(1[5-9]\d\d|2[0-6]\d\d) _ reject
+
+[MITM]
+hostname = %APPEND% autoload.bank.ecitic.com, imcs.citicbank.com
