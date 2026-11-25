@@ -1,0 +1,57 @@
+#!name=PikPak 区域解锁与精细分流
+#!desc=中国大陆专用：解除地区限制；在线浏览/保存/看片走智能策略，上传/下载/字幕调度走直连
+
+[Rule]
+# 1. 区域检测拦截（最优先预匹配）
+DOMAIN,access.mypikpak.com,REJECT,pre-matching
+DOMAIN,access.mypikpak.net,REJECT,pre-matching
+DOMAIN,access.pikpak.me,REJECT,pre-matching
+DOMAIN,access.pikpakdrive.com,REJECT,pre-matching
+
+# 2. 遥测与崩溃日志拦截（须在泛域名规则之前）
+DOMAIN,o4504926511693824.ingest.us.sentry.io,REJECT
+DOMAIN,o4504926511693824.ingest.sentry.io,REJECT
+DOMAIN,rcv5-sp.mypikpak.com,REJECT
+DOMAIN,rcv4-sp.mypikpak.com,REJECT
+DOMAIN,crashhub.mypikpak.com,REJECT
+
+# 3. 在线观看（转码 VOD 流）-> 走代理
+DOMAIN-WILDCARD,vod*.mypikpak.com,智能策略
+DOMAIN-WILDCARD,vod*.mypikpak.net,智能策略
+
+# 4. 在线观看（官方内置播放器 PikPlayer / 浏览器 / 独立播放器，仅 Surge Mac 生效）-> 走代理
+# 不包含 PikPak 主进程与独立下载器，它们会落到第 6 步走直连
+AND,((PROCESS-NAME,PikPlayer),(DOMAIN-WILDCARD,dl-*.mypikpak.*)),智能策略
+AND,((PROCESS-NAME,Google Chrome),(DOMAIN-WILDCARD,dl-*.mypikpak.*)),智能策略
+AND,((PROCESS-NAME,Safari),(DOMAIN-WILDCARD,dl-*.mypikpak.*)),智能策略
+AND,((PROCESS-NAME,Infuse),(DOMAIN-WILDCARD,dl-*.mypikpak.*)),智能策略
+AND,((PROCESS-NAME,IINA),(DOMAIN-WILDCARD,dl-*.mypikpak.*)),智能策略
+AND,((PROCESS-NAME,VidHub),(DOMAIN-WILDCARD,dl-*.mypikpak.*)),智能策略
+
+# 5. 上传（实测为 upload-a10b.mypikpak.com 等 CNAME，及 ali-oss 兜底）-> 走直连
+DOMAIN-WILDCARD,upload-*.mypikpak.*,DIRECT
+DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+
+# 6. 下载（官方客户端 PikPak / 下载器）+ 迅雷系国内调度与字幕 -> 走直连
+DOMAIN-WILDCARD,dl-*.mypikpak.com,DIRECT
+DOMAIN-WILDCARD,dl-*.mypikpak.net,DIRECT
+DOMAIN-SUFFIX,sandai.net,DIRECT
+DOMAIN-SUFFIX,xunlei.com,DIRECT
+
+# 7. 登录、浏览、保存、缩略图、API、客户端 DCDN 调度 -> 走代理
+DOMAIN,dl.pikpak.io,智能策略
+DOMAIN-SUFFIX,mypikpak.com,智能策略
+DOMAIN-SUFFIX,mypikpak.net,智能策略
+DOMAIN-SUFFIX,pikpakdrive.com,智能策略
+DOMAIN-SUFFIX,pikpak.me,智能策略
+DOMAIN-SUFFIX,pickpackapp.com,智能策略
+DOMAIN-SUFFIX,pikpak.io,智能策略
+DOMAIN-SUFFIX,pikpak.site,智能策略
+DOMAIN-SUFFIX,pikpax.net,智能策略
+DOMAIN-SUFFIX,pikpak.cc,智能策略
+
+[Map Local]
+^https?:\/\/access\.mypikpak\.com\/access_controller data-type=text data=" " status-code=200
+
+[MITM]
+hostname = %APPEND% access.mypikpak.com
